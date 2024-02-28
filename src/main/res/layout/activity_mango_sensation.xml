@@ -31,6 +31,8 @@
         android:layout_marginTop="50dp"
         android:textColor="@color/white"
         android:text="
+        Price: LBP 26,013 / unit\n
+        ---------------------------------------\n\n
         Volume: 1 L\n\n
         Packaging: Aseptic Carton - Slim\n\n
         Qty Per Case: 8 x 1 L\n\n
@@ -49,6 +51,7 @@
         android:id="@+id/spinnerPurchaseQuantity"
         android:layout_width="250dp"
         android:layout_height="48dp"
+        android:layout_marginStart="30dp"
         android:layout_gravity="center"
         android:background="@color/purple"
         android:popupBackground="@color/purple"
@@ -61,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:text="Order"    />
 
     </LinearLayout>

@@ -31,12 +31,44 @@
         android:layout_marginTop="50dp"
         android:textColor="@color/white"
         android:text="
+        Price: LBP 26,013 / unit\n
+        ---------------------------------------\n\n
         Volume: 1 L\n\n
         Packaging: Aseptic Carton - Slim\n\n
         Qty Per Case: 8 x 1 L\n\n
         Case Type: Carton Tray + Shrink\n\n
         Shelf Life: 1 year\n" />
 
+
+    <!--    Sub layout for spinner and button   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+        <!--    Purchase quantity spinner   -->
+        <Spinner
+            android:id="@+id/spinnerPurchaseQuantity"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center"
+            android:background="@color/purple"
+            android:popupBackground="@color/purple"
+            android:entries="@array/purchase_quantity"
+            android:spinnerMode="dropdown" />
+
+        <!--    Purchase Button     -->
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:text="Order"    />
+
+    </LinearLayout>
 
     <!--    Back Button     -->
     <!--    <Button-->

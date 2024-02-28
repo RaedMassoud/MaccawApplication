@@ -2,6 +2,7 @@ package com.example.maccawinfoapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,7 +30,21 @@ public class MangoSensation extends AppCompatActivity {
 //      Order Button setup
         buttonOrder = findViewById(R.id.buttonOrder);
         buttonOrder.setOnClickListener( (view) -> {
-            // to do
+
+            double pricePerUnit = 26.013; // price per unit
+
+//          Get and store selected quantity
+            int quantity = Integer.parseInt(spinner.getSelectedItem().toString());
+
+//          Compute total
+            double total = (double) quantity * pricePerUnit;
+
+//          Create message
+            String message = String.format("%d Mango Sensation ordered! Total is LBP %.3f", quantity, total);
+
+//          Make and show snake bar
+            Snackbar.make(buttonOrder, message, Snackbar.LENGTH_SHORT).show();
+
         });
 
 
